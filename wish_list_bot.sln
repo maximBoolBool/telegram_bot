@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "entities", "entities", "{CABF563A-FDC3-4511-BCEF-B21AE9B48692}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "application", "application", "{BA6DB413-2035-42C4-B360-C5DE9FA0BFEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{4FAA55CC-BBA4-40CD-B5F4-35C6E4FD376F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bot_entities", "bot_entities\bot_entities.csproj", "{464D9AD7-420C-4AE4-A250-DE1F7010D4C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "telegram_bot", "telegram_bot\telegram_bot.csproj", "{EF258230-6714-495C-A601-034F52AD8905}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "telegram_services", "telegram_services\telegram_services.csproj", "{657EF740-2751-4415-92DF-272D74DFF41D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rabbit_services", "rabbit_services\rabbit_services.csproj", "{264844FE-24BD-4D77-A463-9DCA8936335E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shared", "shared\shared.csproj", "{1DAF58A3-A2B5-4597-81BF-8F2854F1CD5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "models", "models", "{437762FF-A7A0-4254-9EE8-C955C40C1E50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "telegram_bot_models", "telegram_bot_models\telegram_bot_models.csproj", "{CAF65D15-9C4F-49EC-B322-E6D5E3F2EF19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{464D9AD7-420C-4AE4-A250-DE1F7010D4C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{464D9AD7-420C-4AE4-A250-DE1F7010D4C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{464D9AD7-420C-4AE4-A250-DE1F7010D4C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{464D9AD7-420C-4AE4-A250-DE1F7010D4C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF258230-6714-495C-A601-034F52AD8905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF258230-6714-495C-A601-034F52AD8905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF258230-6714-495C-A601-034F52AD8905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF258230-6714-495C-A601-034F52AD8905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{657EF740-2751-4415-92DF-272D74DFF41D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{657EF740-2751-4415-92DF-272D74DFF41D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{657EF740-2751-4415-92DF-272D74DFF41D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{657EF740-2751-4415-92DF-272D74DFF41D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{264844FE-24BD-4D77-A463-9DCA8936335E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{264844FE-24BD-4D77-A463-9DCA8936335E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{264844FE-24BD-4D77-A463-9DCA8936335E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{264844FE-24BD-4D77-A463-9DCA8936335E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DAF58A3-A2B5-4597-81BF-8F2854F1CD5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DAF58A3-A2B5-4597-81BF-8F2854F1CD5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DAF58A3-A2B5-4597-81BF-8F2854F1CD5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DAF58A3-A2B5-4597-81BF-8F2854F1CD5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAF65D15-9C4F-49EC-B322-E6D5E3F2EF19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF65D15-9C4F-49EC-B322-E6D5E3F2EF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAF65D15-9C4F-49EC-B322-E6D5E3F2EF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF65D15-9C4F-49EC-B322-E6D5E3F2EF19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{464D9AD7-420C-4AE4-A250-DE1F7010D4C0} = {CABF563A-FDC3-4511-BCEF-B21AE9B48692}
+		{EF258230-6714-495C-A601-034F52AD8905} = {BA6DB413-2035-42C4-B360-C5DE9FA0BFEB}
+		{657EF740-2751-4415-92DF-272D74DFF41D} = {4FAA55CC-BBA4-40CD-B5F4-35C6E4FD376F}
+		{264844FE-24BD-4D77-A463-9DCA8936335E} = {4FAA55CC-BBA4-40CD-B5F4-35C6E4FD376F}
+		{1DAF58A3-A2B5-4597-81BF-8F2854F1CD5C} = {4FAA55CC-BBA4-40CD-B5F4-35C6E4FD376F}
+		{CAF65D15-9C4F-49EC-B322-E6D5E3F2EF19} = {437762FF-A7A0-4254-9EE8-C955C40C1E50}
+	EndGlobalSection
+EndGlobal
