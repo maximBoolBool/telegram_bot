@@ -1,0 +1,32 @@
+﻿/bot_entities/obj/Debug/net7.0/bot_entities.csproj.AssemblyReference.cache
+# Игнорировать файлы сборки и временные файлы Visual Studio
+[Oo]bj/
+[Bb]in/
+
+# Игнорировать файлы и каталоги, созданные ReSharper'ом
+_ReSharper*/
+
+# Игнорировать каталоги пакетов NuGet
+*/packages/
+
+# Игнорировать файлы проектов и решений Visual Studio
+*.suo
+*.user
+*.sln.cache
+*.suo
+*.user
+*.sln.cache
+
+# Игнорировать каталоги Visual Studio Code
+.vscode/
+
+# Игнорировать файлы настроек проекта Rider
+.idea/
+*.iml
+*.iws
+
+# Игнорировать файлы настроек проекта Xamarin
+*.userprefs
+*.pdb
+*.cache
+*.dll
