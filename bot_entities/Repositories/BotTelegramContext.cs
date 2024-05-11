@@ -35,5 +35,11 @@ public class BotTelegramContext : DbContext
         UserEntity.Setup(modelBuilder);
     }
 
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseNpgsql();
+        base.OnConfiguring(optionsBuilder);
+    }
+
     #endregion
 }
