@@ -1,10 +1,12 @@
 using bot_entities;
+using telegram_bot;
 using telegram_services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddUserEntities();
+builder.Services.AddEnviromentVariables(builder.Configuration);
+builder.Services.AddUserEntities(builder.Configuration);
 builder.Services.AddTelegramServices();
 
 var app = builder.Build();
-app.Run();
+await app.RunAsync();

@@ -10,4 +10,9 @@
       <ProjectReference Include="..\telegram_services\telegram_services.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="DotNetEnv" Version="3.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="8.0.0" />
+    </ItemGroup>
+
 </Project>
