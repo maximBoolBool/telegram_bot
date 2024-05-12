@@ -1,4 +1,5 @@
 ﻿using bot_entities.Factory;
+using Microsoft.Extensions.DependencyInjection;
 using telegram_bor_models.models;
 
 namespace telegram_services.Services.Impl;
@@ -14,10 +15,11 @@ public class FriendMessageServiceHandler : IFriendMessageServiceHandler
 
     #region .ctor
 
-    public FriendMessageServiceHandler(ITelegramDbFactory dbFactory, INotifyMeneger notifyMeneger)
+    public FriendMessageServiceHandler(ITelegramDbFactory dbFactory, IServiceScopeFactory factory)
     {
         _dbFactory = dbFactory;
-        _notifyMeneger = notifyMeneger;
+        using var scope = factory.CreateScope();
+        _notifyMeneger = scope.ServiceProvider.GetRequiredService<INotifyMeneger>();
     }
 
     #endregion

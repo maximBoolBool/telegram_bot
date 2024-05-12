@@ -1,4 +1,5 @@
 ﻿using bot_entities.Configuration;
+using bot_entities.Factory;
 using bot_entities.Repositories;
 using bot_entities.Repositories.Impl;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +15,7 @@ public static class ServiceCollection
         var connectionString = configuration[DbConfigurationKeys.DbConnectionKey];
 
         services.AddDbContext<BotTelegramContext>(options => options.UseNpgsql(connectionString));
-        services.AddSingleton<ITelegramDbWorker, TelegramDbWorker>();
+        services.AddScoped<ITelegramDbWorker, TelegramDbWorker>();
+        services.AddSingleton<ITelegramDbFactory, TelegramDbFactory>();
     }
 }

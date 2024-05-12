@@ -37,7 +37,7 @@ public class BotTelegramContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseNpgsql();
+        optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=tg_bot;Username=postgres;Password=panzer117");
         base.OnConfiguring(optionsBuilder);
     }
 
