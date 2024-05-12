@@ -2,11 +2,11 @@
 
 namespace telegram_services.Configs;
 
-public class FriendRequestConsumerConfigs : IRabbitConsumerConfigs
+public class NotifyMessageConsumerConfigs : IRabbitConsumerConfigs
 {
     public string Host { get; set; }
     
     public string Queue { get; set; }
-
+    
     public int Port { get; set; }
 }

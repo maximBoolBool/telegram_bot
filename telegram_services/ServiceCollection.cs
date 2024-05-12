@@ -15,6 +15,10 @@ public static class ServiceCollection
         services.AddSingleton<IFriendMessageServiceHandler, FriendMessageServiceHandler>();
         services.AddSingleton<IFriendConsumer, FriendConsumer>();
 
+        services.AddSingleton<INotifyMessageServiceHandler, NotifyMessageServiceHandler>();
+        services.AddSingleton<INotifyConsumer, NotifyConsumer>();
+
         services.AddHostedService<FriendRequestMessageBackgroundService>();
+        services.AddHostedService<NotifyMessageBackgroudService>();
     }
 }

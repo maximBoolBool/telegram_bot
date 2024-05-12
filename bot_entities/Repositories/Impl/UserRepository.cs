@@ -38,5 +38,10 @@ public class UserRepository : IUserRepository
        await _context.Users.AddAsync(newUser, cancellationToken);
     }
 
+    /// <inheritdoc />
+    public IQueryable<UserEntity> CreateQuery() 
+        => _context.Users.AsQueryable();
+    
+
     #endregion
 }

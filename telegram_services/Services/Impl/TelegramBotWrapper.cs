@@ -61,7 +61,7 @@ public class TelegramBotWrapper : ITelegramBotWrapper
             default:
                 await botClient.SendTextMessageAsync(
                     update.Id,
-                    "Прошупрощения такой команды нет(",
+                    "Прошу прощения такой команды нет(",
                     cancellationToken: cancellationToken);
                 break;
         }

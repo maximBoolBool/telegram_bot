@@ -21,4 +21,9 @@ public interface IUserRepository
     ///     Создать нового пользователя
     /// </summary>
     Task CreateUser(UserEntity newUser, CancellationToken cancellationToken = default);
+
+    /// <summary>
+    ///     Сделать кастомный запрос
+    /// </summary>
+    IQueryable<UserEntity> CreateQuery();
 }

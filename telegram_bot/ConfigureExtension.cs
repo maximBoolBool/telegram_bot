@@ -12,13 +12,22 @@ public static class ConfigureExtension
         {
             TelegramBotToken = configuration[ConfigurationVaribalesKeys.TelegramBotToken]
         };
+
         var friendRequestConfigs = new FriendRequestConsumerConfigs
         {
-            Queue = configuration[ConfigurationVaribalesKeys.FriendRequestQuue],
+            Queue = configuration[ConfigurationVaribalesKeys.FriendRequestQueue],
             Host = configuration[ConfigurationVaribalesKeys.RabbitHost],
             Port = int.Parse(configuration[ConfigurationVaribalesKeys.RabbitPort])
         };
 
+        var notifyConfigs = new NotifyMessageConsumerConfigs
+        {
+            Queue = configuration[ConfigurationVaribalesKeys.NotifyQueue],
+            Host = configuration[ConfigurationVaribalesKeys.RabbitHost],
+            Port = int.Parse(configuration[ConfigurationVaribalesKeys.RabbitPort])
+        };
+
+        services.AddSingleton(notifyConfigs);
         services.AddSingleton(botConfigs);
         services.AddSingleton(friendRequestConfigs);
     }

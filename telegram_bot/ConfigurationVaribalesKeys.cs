@@ -8,5 +8,7 @@ public static class ConfigurationVaribalesKeys
 
     public const string TelegramBotToken = "TELEGRAM_BOT_TOKEN";
 
-    public const string FriendRequestQuue = "FRIEND_REQUEST_QUEUE";
+    public const string FriendRequestQueue = "FRIEND_REQUEST_QUEUE";
+
+    public const string NotifyQueue = "NOTIFY_QUEUE";
 }
